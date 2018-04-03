@@ -1,0 +1,17 @@
+{
+  "manifest_version":2,
+  "name":"Save-Webpages",
+  "version":"1.0.0",
+  "description": "将当前网页保存成pdf并发送到个人邮箱",
+  "icons":
+  {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+  },
+  "permissions": [],
+  "background": {
+     "scripts": ["sendUrl.js"],
+     "persistent": false
+   }
+}
