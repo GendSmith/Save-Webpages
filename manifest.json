@@ -9,9 +9,19 @@
       "48": "images/icon.png",
       "128": "images/icon.png"
   },
-  "permissions": [],
+  "permissions": [
+                "background",
+                "tabs"
+
+              ],
   "background": {
-     "scripts": ["sendUrl.js"],
+     "scripts": ["background.js","popup.js"],
+
+     "pages":"background.html",
      "persistent": false
+   },
+   "browser_action":{
+     "default_popup":"popup.html",
+     "default_title":"Save Webpages"
    }
 }
